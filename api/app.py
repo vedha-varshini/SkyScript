@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template, request
 import requests
 
-app = Flask(__name__, template_folder='../templates')  # Adjust template path
+app = Flask(__name__, template_folder='../templates')  # Adjust template path for Vercel
 
 # API configuration
 API_KEY = os.getenv("API_KEY", "207847adb8msh94744171f8832d6p1cba76jsn720da22eb090")  # Fallback for local testing
