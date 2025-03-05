@@ -5,11 +5,12 @@ import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 import base64
 from io import BytesIO
+import os
 
 app = Flask(__name__)
 
 # API configuration
-API_KEY = "207847adb8msh94744171f8832d6p1cba76jsn720da22eb090"
+API_KEY = os.getenv("API_KEY")
 BASE_URL = "https://open-weather13.p.rapidapi.com/city/"
 HEADERS = {
     "x-rapidapi-key": API_KEY,
