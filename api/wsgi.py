@@ -9,6 +9,7 @@ from app import app
 
 def wsgi_handler(app, event, context):
     from werkzeug.wrappers import Request, Response
+    from io import BytesIO
     
     # Convert Vercel event to WSGI environ
     environ = {
